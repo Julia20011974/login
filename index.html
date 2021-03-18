@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вход</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="content">
+    <div class="content-wrapper d-flex flex-row">
+      <div class="content-picture d-flex justify-content-center align-items-center">
+        <img src="img/picture.png" alt="Рабочий процесс">
+      </div>
+      <!--picture-->
+
+      <div class="form">
+        <div class="form-wrapper">
+          <div class="head">
+            <div class="container d-flex flex-column px-0">
+              <div class="head-logo">
+                <img src="img/logo.svg" alt="логотип" />
+              </div>
+              <span class="head-title">Вход в систему</span>
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.head -->
+
+          <div class="main">
+            <div class="main-fields">
+              <div class="container px-0">
+                <div class="field">
+                  <input type="text" id="login" placeholder=" " class="field-input" autocomplete="off">
+                  <label for="login" class="field-label">Логин</label>
+                </div>
+                <!-- /.field -->
+                <div class="field">
+                  <input type="password" id="password" class="field-input" placeholder=" " autocomplete="off">
+                  <label for="password" class="field-label">Пароль</label>
+                  <img src="img/eye.svg">
+                </div>
+                <!-- /.field -->
+              </div>
+              <!--./container-->
+            </div>
+            <!-- /.main-fields -->
+
+            <div class="cheked">
+              <div class="container px-0 d-flex justify-content-between">
+                <div class="cheked-remember">
+                  <input type="checkbox" class="cheked-remember-input" id="checkbox-id" autocomplete="off">
+                  <label for="checkbox-id" class="cheked-remember-label">Запомнить меня</label>
+                </div>
+                <!--./remember-->
+                <a class="cheked-question" href="#">Забыли пароль?</a>
+              </div>
+              <!--./container-->
+            </div>
+            <!-- /.cheked -->
+
+            <div class="button">
+              <div class="container px-0">
+                <button class="button-log">Войти</button>
+              </div>
+              <!--./container-->
+            </div>
+            <!-- /.button -->
+          </div>
+          <!--./main-->
+
+          <div class="foot">
+            <div class="container d-flex justify-content-center px-0">
+              <span class="foot-question">Впервые на сайте?</span>
+              <a href="#" class="foot-link">Зарегистрируйтесь</a>
+            </div>
+          </div>
+          <!--./foot-->
+        </div>
+        <!--./form-container-->
+      </div>
+      <!--form-->
+    </div>
+    <!--./content-wrapper-->
+  </div>
+  <!-- /.content-->
+</body>
+
+</html>

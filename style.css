@@ -1,0 +1,193 @@
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.content-picture {
+  margin: 60px 0 40px 0;
+}
+
+.content-picture > img {
+  width: 70%;
+  margin: auto;
+}
+
+.form {
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+  margin: 15px 0;
+  margin-right: 30px;
+}
+
+.form-wrapper {
+  margin: 0 35px;
+  min-width: 300px;
+}
+
+.head {
+  margin-top: 20px;
+}
+
+.head-logo {
+  max-width: 150px;
+  margin: auto;
+}
+
+.head-logo > img {
+  width: 100%;
+}
+
+.head-title {
+  margin-left: auto;
+  margin-right: auto;
+  color: #1269db;
+  font-family: Roboto;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+
+.main-fields {
+  padding: 20px 0;
+}
+
+.field {
+  width: 100%;
+  position: relative;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #a0acc0;
+}
+
+.field:nth-child(2n + 1) {
+  padding-bottom: 25px;
+}
+
+.field-input {
+  width: 100%;
+  height: 35px;
+  border: 3px solid #a0acc0;
+  padding-left: 15px;
+}
+
+.field-label {
+  position: absolute;
+  top: 0.5px;
+  left: 15px;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+.field > img {
+  position: absolute;
+  top: 8px;
+  right: 2vh;
+  width: 7%;
+}
+
+.field-input:focus ~ .field-label,
+.field-input:not(:placeholder-shown).field-input:not(:focus) ~ .field-label {
+  font-size: 10px;
+  line-height: 6px;
+  letter-spacing: 0.04em;
+  top: -3px;
+  padding: 0 1.5px;
+  background-color: white;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+.field-input:focus {
+  border: 3px solid #6c6c77;
+}
+
+.cheked-remember-input + .cheked-remember-label,
+.cheked-question {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 12px;
+}
+
+.cheked-question {
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.cheked-remember-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.cheked-remember-input + .cheked-remember-label::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #1269db;
+  border-radius: 3px;
+  margin-right: 0.3em;
+}
+
+.cheked-remember-input:checked + .cheked-remember-label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.cheked-remember-label {
+  letter-spacing: 0.04em;
+  color: #1269db;
+}
+
+.button {
+  padding: 25px 0;
+}
+
+.button-log {
+  width: 150px;
+  height: 40px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  background: #1269db;
+  border: 3px solid #1269db;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.foot-question,
+.foot-link {
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #1269db;
+  mix-blend-mode: normal;
+  padding-right: 3px;
+}
+
+@media (max-width: 800px) {
+  .content-picture > img {
+    display: none;
+  }
+  .form {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
